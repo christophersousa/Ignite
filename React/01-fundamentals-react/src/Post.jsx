@@ -1,7 +1,12 @@
-export function Post(){
+/*
+  author: string
+  content: string
+*/
+export function Post(props){
   return(
     <>
-      <h1>New component Post</h1>
+      <strong>{props.author}</strong>
+      <p>{props.content}</p>
     </>
   )
 }
